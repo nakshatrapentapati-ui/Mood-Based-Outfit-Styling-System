@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MoodMuse Boutique</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+<style>
+
+/* YOUR CSS KEPT EXACTLY SAME */
+
+body{
+margin:0;
+background:#f3b8cc;
+font-family:'Poppins',sans-serif;
+}
+
+.wrapper{
+width:1200px;
+margin:40px auto;
+background:white;
+border-radius:6px;
+overflow:hidden;
+box-shadow:0 25px 60px rgba(0,0,0,0.15);
+}
+
+.top-strip{
+background:#f7a9c4;
+height:28px;
+}
+
+.logo{
+text-align:center;
+padding:25px 0 10px;
+font-family:'Playfair Display',serif;
+font-size:30px;
+}
+
+.nav{
+background:#d7c7f4;
+padding:12px 0;
+text-align:center;
+font-size:14px;
+}
+
+.nav a{
+margin:0 20px;
+text-decoration:none;
+color:#444;
+font-weight:500;
+}
+
+.scallop{
+height:25px;
+background:
+radial-gradient(circle at 15px -10px, #fdf1f6 20px, transparent 21px) repeat-x;
+background-size:30px 30px;
+background-color:#d7c7f4;
+}
+
+.hero{
+background:#fdf1f6;
+padding:100px 40px;
+position:relative;
+text-align:center;
+}
+
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:58px;
+color:#f07aa8;
+margin:0;
+}
+
+.hero h3{
+font-family:'Dancing Script',cursive;
+font-size:28px;
+margin-top:10px;
+color:#444;
+}
+
+.hero button{
+margin-top:25px;
+padding:12px 30px;
+border:none;
+border-radius:25px;
+background:#f07aa8;
+color:white;
+font-weight:500;
+cursor:pointer;
+}
+
+.polaroid{
+position:absolute;
+width:220px;
+background:white;
+padding:15px;
+box-shadow:0 15px 25px rgba(0,0,0,0.15);
+}
+
+.left-img{
+left:120px;
+top:100px;
+transform:rotate(-6deg);
+}
+
+.right-img{
+right:120px;
+top:120px;
+transform:rotate(6deg);
+}
+
+.polaroid img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.info{
+background:#f8c6d9;
+padding:60px;
+text-align:center;
+}
+
+.info h2{
+margin:0;
+font-size:24px;
+}
+
+.info p{
+max-width:700px;
+margin:15px auto;
+color:#555;
+}
+
+.info button{
+background:#f07aa8;
+border:none;
+padding:10px 25px;
+border-radius:20px;
+color:white;
+}
+
+.trending{
+padding:60px;
+text-align:center;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+}
+
+.card{
+width:250px;
+background:#fafafa;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:100%;
+height:280px;
+object-fit:cover;
+}
+
+.scallop2{
+height:25px;
+background:
+radial-gradient(circle at 15px -10px, #e6d8f5 20px, transparent 21px) repeat-x;
+background-size:30px 30px;
+background-color:#f8c6d9;
+}
+
+.collection{
+background:#e6d8f5;
+padding:80px;
+text-align:center;
+}
+
+.form-box{
+background:white;
+width:500px;
+margin:40px auto;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.form-box select, .form-box input{
+width:100%;
+padding:10px;
+margin-top:10px;
+border-radius:10px;
+border:1px solid #ddd;
+}
+
+.form-box button{
+margin-top:15px;
+background:#f07aa8;
+border:none;
+padding:10px;
+border-radius:20px;
+color:white;
+width:100%;
+}
+
+.result{
+display:none;
+margin-top:30px;
+background:#fff0f6;
+padding:20px;
+border-radius:15px;
+}
+
+.result img{
+width:150px;
+margin:10px;
+border-radius:10px;
+}
+
+.footer{
+background:#f8d7e5;
+padding:20px;
+text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<div class="top-strip"></div>
+
+<div class="logo">🎀MoodMuse Boutique🎀</div>
+
+<div class="nav">
+<a href="#">HOME</a>
+<a href="#">TRENDING</a>
+<a href="#">STYLE ME</a>
+</div>
+
+<div class="scallop"></div>
+
+<div class="hero">
+
+<div class="polaroid left-img">
+<img src="file:///C:/Users/Nakshatra/Downloads/bg1.jpg">
+</div>
+
+<div class="polaroid right-img">
+<img src="file:///C:/Users/Nakshatra/Downloads/bg2.jpg">
+</div>
+
+<h1>Style Your Mood</h1>
+<h3>Dress your vibe. Slay your energy ✨</h3>
+
+<button onclick="document.querySelector('.collection').scrollIntoView({behavior:'smooth'})">STYLE ME</button>
+
+</div>
+
+<div class="info">
+<h2>Outfits Styled Around Your Mood</h2>
+<p>We curate complete outfit recommendations based on your mood, occasion, and preferences.</p>
+<button>Explore More</button>
+</div>
+
+<div class="trending">
+<h2>Trending Looks Nowadays</h2>
+
+<div class="cards">
+<div class="card"><img src="file:///C:/Users/Nakshatra/Downloads/TL-4.jpeg"></div>
+<div class="card"><img src="file:///C:/Users/Nakshatra/Downloads/TL-2.jpeg"></div>
+<div class="card"><img src="file:///C:/Users/Nakshatra/Downloads/TL-3.jpeg"></div>
+</div>
+
+</div>
+
+<div class="scallop2"></div>
+
+<div class="collection">
+
+<h2>Find Your Perfect Look</h2>
+
+<div class="form-box">
+
+<select id="type" onchange="updateSub()">
+<option value="">Select Outfit Type</option>
+<option value="western">Western</option>
+<option value="indian">Indian</option>
+<option value="indo">Indo-Western</option>
+</select>
+
+<select id="subcategory">
+<option>Select Style</option>
+</select>
+
+<select id="occasion">
+<option>Party</option>
+<option>Date</option>
+<option>College</option>
+<option>Office</option>
+</select>
+
+<select id="mood">
+<option>Romantic</option>
+<option>Confident</option>
+<option>Happy</option>
+<option>Calm</option>
+</select>
+
+<input type="text" id="color" placeholder="Color Preference">
+
+<input type="text" placeholder="Additional Instructions">
+
+<button onclick="generateOutfit()">Get My Outfit</button>
+
+<div class="result" id="resultBox"></div>
+
+</div>
+
+</div>
+
+<div class="footer">
+Mood Based Outfit Styling System
+</div>
+
+</div>
+
+<script>
+
+function updateSub(){
+
+let type=document.getElementById("type").value;
+let sub=document.getElementById("subcategory");
+
+sub.innerHTML="";
+
+if(type==="indian"){
+sub.innerHTML=`
+<option value="saree">Saree</option>
+<option value="lehenga">Lehenga</option>
+<option value="sharara">Sharara</option>
+`;
+}
+
+else if(type==="western"){
+sub.innerHTML=`
+<option value="casual">Casual</option>
+<option value="formal">Formal</option>
+<option value="party">Party Wear</option>
+`;
+}
+
+else if(type==="indo"){
+sub.innerHTML=`
+<option value="fusion">Fusion</option>
+<option value="indoCasual">Indo Casual</option>
+`;
+}
+
+}
+
+function generateOutfit(){
+
+let type=document.getElementById("type").value;
+let sub=document.getElementById("subcategory").value;
+let result=document.getElementById("resultBox");
+
+let outfitImage="";
+let shoesImage="";
+let bagImage="";
+let tips="";
+
+if(type==="indian" && sub==="saree"){
+outfitImage="file:///C:/Users/Nakshatra/Downloads/ind1.jpeg";
+shoesImage="file:///C:/Users/Nakshatra/Downloads/ind2.jpeg";
+bagImage="file:///C:/Users/Nakshatra/Downloads/ind3.jpeg";
+tips="Style with jhumkas and bangles.";
+}
+
+else if(type==="indian" && sub==="lehenga"){
+outfitImage="file:///C:/Users/Nakshatra/Downloads/ind1.jpeg";
+shoesImage="file:///C:/Users/Nakshatra/Downloads/ind2.jpeg";
+bagImage="file:///C:/Users/Nakshatra/Downloads/ind3.jpeg";
+tips="Pair with statement earrings.";
+}
+
+else if(type==="western"){
+outfitImage="file:///C:/Users/Nakshatra/Downloads/western%201.jpeg";
+shoesImage="file:///C:/Users/Nakshatra/Downloads/west%202.jpeg";
+bagImage="file:///C:/Users/Nakshatra/Downloads/west%203.jpeg";
+tips="White sneakers complete casual western looks.";
+}
+
+else{
+outfitImage="file:///C:/Users/Nakshatra/Downloads/iw1.jpeg";
+shoesImage="file:///C:/Users/Nakshatra/Downloads/iw2.jpeg";
+bagImage="file:///C:/Users/Nakshatra/Downloads/iw3.jpeg";
+tips="Indo-western looks great with oxidized jewelry.";
+}
+
+result.style.display="block";
+
+result.innerHTML=`
+<h3>Your Styled Look ✨</h3>
+<img src="${outfitImage}">
+<img src="${shoesImage}">
+<img src="${bagImage}">
+<p><b>Styling Tip:</b> ${tips}</p>
+`;
+
+}
+
+</script>
+
+</body>
+</html>
